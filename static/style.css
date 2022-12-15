@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
+/*all pages design*/
+body
+{
+	display: grid;
+	justify-content: space-evenly;
+	background-image: url("../images/concert_crowd_audience_people_music_entertainment_festival_performance-727825.jpg") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	font-family:sans-serif ;
+	animation: fadeIn 7s;
+}
+
+
+/* animation pages */
+@keyframes fadeIn
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	50%
+	{
+		opacity: 1;
+	}
+
+	100%
+	{
+		opacity: 2;
+	}
+}
+
+
+/*company logo*/
+header h1
+{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 50px;
+	color: chocolate;
+}
+
+/*nav*/
+nav
+{
+	display: grid;
+	justify-content: center;
+	float: left;
+}
+
+nav li
+{
+	display: inline-block;
+	margin-left:30px;
+	position: relative;
+}
+
+nav a
+{
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 10px;
+}
+
+nav a:hover
+{
+	color: black;
+	background-color:chocolate;
+	border-radius: 4px;
+}
+
+/* active nav bar*/
+.active
+{
+	color: black;
+	background-color:chocolate;
+	border-radius: 4px;
+}
+
+/* responsive menu*/
+@media screen and (max-width: 600px)
+{
+	nav a
+	{
+		float: none;
+		display: block;
+	}
+}
+
+
+/*footer menu*/
+footer
+{
+	height: auto;
+	background-color: black;
+	padding:40px 0;
+	color:white;
+	width: 100% ;
+}
+
+footer ul
+{
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0;
+}
+
+footer li
+{
+	padding:0 10px;
+}
+
+footer ul a
+{
+	color:inherit;
+	text-decoration:none;
+	opacity:0.8;
+}
+
+fooetr ul a:hover
+{
+	opacity:1;
+}
+
+footer .social
+{
+	text-align:center;
+	padding-bottom:25px;
+}
+
+footer h1
+{
+	font-size: medium;
+}
+
+footer .social .iconsocial
+{
+	font-size:24px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	border:1px white ;
+	margin:0 8px;
+	color:white;
+	opacity:0.9;
+}
+
+footer .social > a:hover
+{
+	opacity:0.7;
+}
+
+footer .copyright
+{
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:#aaa;
+	margin-bottom:0;
+}
+
+footer input[type=text]
+{
+	padding: 6px;
+	border: none;
+	margin-top: 8px;
+	margin-right: 16px;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+/*HomePage information*/
+section
+{
+	display: grid;
+	max-width: 700px ;
+	margin-top: 0px;
+	margin-right: 40%;
+	padding-left: 85px;
+	padding-right: 10px;
+}
+
+section h1
+{
+	font-size: 50px;
+	font-weight: 400;
+}
+
+section a
+{
+	text-decoration: none;
+	background: chocolate;
+	padding: 14px 20px;
+	display: inline-block;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 30px;
+	border-radius: 30px;
+	width: 30%;
+	text-align: center;
+}
+
+
+/*forms settings*/
+form
+{
+	align-items: center;
+	display: grid;
+	justify-content: center;
+	width: 100%;
+	font-size: large;
+}
+
+form h2
+{
+	color: chocolate;
+}
+
+.input_field
+{
+	border: none;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 15px;
+}
+
+.labels
+{
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 150px;
+	text-align: left;
+	color: white;
+}
+
+
+/*buttons and submit buttons in forms and website*/
+.Buttons
+{
+	padding: 0.5em 0.5em;
+	font-size: 16px;
+	color: #000;
+	background-color: chocolate;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
+	outline: none;
+	font-family: sans-serif;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.Buttons:hover
+{
+	box-shadow: 0px 15px 20px #c08c62;
+	color: white;
+	transform: translateY(-10px);
+}
+
+/*sign in and sign up buttons*/
+.SignButtons
+{
+	text-decoration: none;
+	background: chocolate;
+	padding: 10px 40px;
+	display: inline-block;
+	color: #fff;
+	font-size: 13px;
+	border-radius: 4px;
+}
+
+
+
+/*about the website- our company page */
+.info1
+{
+	justify-content: space-around;
+	margin-right: 20%;
+	margin-left: 20%;
+	gap: 50px;
+}
+
+.item1
+{
+	color: black;
+	border: 1px solid black;
+	padding: 30px;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 15px;
+	background-color: #c08c62;
+	opacity: 0.8;
+}
+
+/*read more design at our company page  */
+ #more {
+	 display: none;
+ }
+
+
+/* Our Show page */
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: grid;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+
+
+/* our show buttons design */
+#myBtnContainer
+{
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+#myBtnH1{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 20px;
+
+}
+
+/* alert when password on caps lock*/
+#text
+{
+	background-color: red;
+	display:none;
+	color:white;
+	border-radius: 5px;
+	font-size: 13px;
+	text-align: center;
+}
+
+/*greeting style */
+ #greeting{
+    text-align: center;
+    font-size: 20px;
+	 color: black;
+}
