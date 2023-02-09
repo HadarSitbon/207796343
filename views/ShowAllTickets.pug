@@ -1,0 +1,21 @@
+extends layout 
+block content 
+    h2 #{v1} 
+    table.Table
+        tr 
+            th ShowName  
+            th category 
+            th location  
+            th date  
+            th price   
+            th count         
+
+        each n in tickets 
+            tr 
+            td=n.ShowName
+            td=n.category  
+            td=n.location 
+            td=n.date
+            td=n.price 
+            td=n.count
+            

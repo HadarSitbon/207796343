@@ -1,0 +1,16 @@
+extends layout 
+block content 
+    h2 #{v1} 
+    table.Table
+        tr 
+            th firstname  
+            th lastname 
+            th country  
+            th subject           
+
+        each n in Messages 
+            tr 
+            td=n.firstname
+            td=n.lastname  
+            td=n.country 
+            td=n.subject 

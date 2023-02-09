@@ -1,0 +1,23 @@
+extend Layout
+block content
+    form(name="ContactUs", type="submit", action="/createNewMessage", method="post")
+      h2 Contact Us
+      div
+        label.labels First Name
+        input#fname(type="text", class="input_field", name="firstname", placeholder="Your name..")
+      div
+        label.labels Last Name
+        input#lname(type="text", class="input_field", name="lastname", placeholder="Your last name..")
+      div
+        label.labels Country
+        select#country(name="country", class="input_field")
+          option(value="australia") Israel
+          option(value="australia") Australia
+          option(value="canada") Canada
+          option(value="usa") USA
+      div
+        label.labels Subject
+        textarea#subject(class="input_field", name="subject", placeholder="Write something..", style="height:200px")
+      div
+        input.Buttons(type="submit", value="Submit")
+    

@@ -1,0 +1,6 @@
+email,FirstName,LastName,Birthdate ,Phone,password,repassword,gender
+hadar@gmail.com,hadar,sitbon,1999-09-01,054-5294965,123456789,123456789,Female 
+hilasitbon@gmail.com,hila,sitbon,1998-03-01,054-1111110,111111111,111111111,Female 
+yossi@gmail.com,yossi ,sitbon,1961-03-18,054-7728770,222222222,222222222,Male
+sara@gmail.com,sara ,sitbon,1965-05-27,054-4735007,333333333,333333333,Female 
+ron@gmail.com,ron,maman ,1998-08-22,054-2222220,444444444,444444444,Male

@@ -1,0 +1,24 @@
+extends layout 
+block content 
+    h2 #{v1} 
+    p #{v2}
+    table.Table
+        tr 
+        
+            th ShowName  
+            th category 
+            th location  
+            th date  
+            th price   
+            th count         
+
+        each n in results 
+            tr 
+            td=n.ShowName
+            td=n.category  
+            td=n.location 
+            td=n.date
+            td=n.price 
+            td=n.count
+    a(class= "ButtonResult" href="https://2207.kupat.co.il/") Buy ! 
+        

@@ -1,0 +1,9 @@
+extend Layout
+block content
+    form(action="/DeleteUser", method="POST")
+      h2 Delete Details
+      div
+        input#Email(class="input_field", type="email", name="Email", placeholder="Enter Email", required)
+      input#signup.Buttons(type="submit", value="Delete")
+
+        

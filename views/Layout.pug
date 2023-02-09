@@ -1,0 +1,67 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Ticket Space
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="icon", href="images/icon.jpg")
+    script(defer, src="JS/JS.js")
+    script(defer, src="JS/General.js")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  body.body
+    header
+      h1 Ticket Space
+    nav#navbar
+      ul
+        li
+          a(href="HomePage")
+            i.fa.fa-fw.fa-home
+            | Home
+        li
+          a(href="OurCompany") Our Company
+        li
+          a(href="OurShows") Our Shows
+        li
+          a(href="SearchTicket")
+            i.fa.fa-fw.fa-search
+            | Search Tickets
+        li
+          a(href="SellTickets") Sell Tickets
+        li
+          a(href="Profile") My Profile
+        li
+          a.SignButtons(href="SignIn")
+            i.fa.fa-fw.fa-user
+            | Sign In
+        li
+          a.SignButtons(href="SignUp") Sign Up
+    block content
+    br 
+    br
+    br
+    footer.footer
+      .social
+        h1 Contact Us
+        a(href="#")
+          img.iconsocial(src="images/face.png", alt="iconfacebook")
+        a(href="#")
+          img.iconsocial(src="images/whatsup.png", alt="iconwhats")
+        a(href="#")
+          img.iconsocial(src="images/twitter.png", alt="icontwiteer")
+        a(href="#")
+          img.iconsocial(src="images/email1.png", alt="iconemail")
+        a(href="#")
+          img.iconsocial(src="images/instagram.png", alt="iconinsta")
+      ul.list-inline
+        li.list-inline-item
+          a(href="HomePage") Home
+        li.list-inline-item
+          a(href="ContactUs") Contact Us
+        li.list-inline-item
+          a(href="#") Terms &amp; Privacy Policy
+        input(type="text", placeholder="Search..")
+        i.fa.fa-search
+      p.copyright
+        | Ticket Space © 2022

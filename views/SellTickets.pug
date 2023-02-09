@@ -1,0 +1,41 @@
+extend Layout
+block content
+    form(name="Sell", type="submit", method="post", action="/createNewTicket", onsubmit="return SellValidation()")
+      h2 Sell A Ticket
+      div
+        label.labels(for="ShowName") Show Name
+        input#showName(class="input_field", type="text", name="showName", placeholder="Enter Show Name", required)
+      div
+        label.labels(for="Category") Category
+        select(name="Category", class="input_field", required)
+          option(value="Sports") Sports
+          option(value="Concerts") Concerts
+          option(value="Theater&Comedy") Theater&amp;Comedy
+          option(value="Parties") Parties
+          option(value="Shows") Shows
+      div
+        label.labels(for="location") Location
+        select(name="location", class="input_field", required)
+          option(value="Center District") Center District
+          option(value="South Israel") South Israel
+          option(value="North Israel") North Israel
+          option(value="Tel-Aviv") Tel-Aviv
+          option(value="Jerusalem") Jerusalem
+          option(value="Beer-Sheva") Beer-Sheva
+          option(value="Haifa") Haifa
+      .Date-Input
+        .field
+          lable.labels
+            | Date
+          input#date(type="date", class="input_field", name="date", required)
+      .price-input
+        .field
+          lable.labels
+            | Price
+          input#price(type="number", class="input_field", value="100", name="price", required)
+      .count-input
+        .field
+          lable.labels
+            | Count
+          input#count(type="number", class="input_field", value="1", name="count", required)
+      input.Buttons(type="submit", value="Add Ticket To Sell")

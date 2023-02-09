@@ -1,0 +1,43 @@
+extend Layout
+block content
+    form(name="SearchTicket", type="submit", action="/FindTicket", method="get", onsubmit="return SearchValidation()")
+      h2 Search A Ticket
+      div
+        label.labels(for="ShowName") Show Name
+        input#showName(class="input_field", type="text", name="showName", placeholder="Enter Show Name")
+      div
+        label.labels(for="Category") Category
+        select(name="Category", class="input_field", required)
+          option(value="Sports") Sports
+          option(value="Concerts") Concerts
+          option(value="Theater&Comedy") Theater&amp;Comedy
+          option(value="Parties") Parties
+          option(value="Shows") Shows
+      div
+        label.labels(for="location") Location
+        select(name="location", class="input_field", required)
+          option(value="Center District") Center District
+          option(value="South Israel") South Israel
+          option(value="North Israel") North Israel
+          option(value="Tel-Aviv") Tel-Aviv
+          option(value="Jerusalem") Jerusalem
+          option(value="Beer-Sheva") Beer-Sheva
+          option(value="Haifa") Haifa
+      div
+        lable.labels
+          | Date (From)
+        input#datefrom(type="date", class="input_field", name="datefrom", required)
+      div
+        lable.labels
+          | Date (Until)
+        input#dateuntil(type="date", class="input_field", name="dateuntil", required)
+      div
+        lable.labels
+          | Min Price
+        input#minPrice(type="number", class="input_field", value="100", name="minPrice", required)
+      div
+        lable.labels
+          | Max Price
+        input#maxPrice(type="number", class="input_field", name="maxPrice", value="300", required)
+      input.Buttons(type="submit", value="Search Ticket")
+    

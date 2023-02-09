@@ -1,0 +1,106 @@
+extend Layout
+block content
+    #myBtnContainer
+      h1#myBtnH1 Choose Category
+      div
+        button.Buttons(onclick="filterSelection('all')")  Show all
+        button.Buttons(onclick="filterSelection('israeli')")  Israeli
+        button.Buttons(onclick="filterSelection('bands')")  Bands
+        button.Buttons(onclick="filterSelection('Pop')")  Pop
+        button.Buttons(onclick="filterSelection('standUp')") Stand Up
+        button.Buttons(onclick="filterSelection('Show')") Show
+    // Portfolio Gallery Grid
+    .row
+      .column.bands
+        .content
+          img(src="/images/mashina.PNG", alt="mashina", style="width:100%")
+          h4 Mashina
+      .column.bands
+        .content
+          img(src="images/poliker.PNG", alt="poliker", style="width:100%")
+          h4 Yehuda Poliker
+      .column.bands
+        .content
+          img(src="images/mercedes.PNG", alt="mercedes", style="width:100%")
+          h4 Mercedes Band
+      .column.bands
+        .content
+          img(src="images/artzi.PNG", alt="sholomartzi", style="width:100%")
+          h4 Shlomo Artzi
+      .column.israeli
+        .content
+          img(src="images/mosh.PNG", alt="mosh", style="width:100%")
+          h4 Mosh Ben Ari
+      .column.israeli
+        .content
+          img(src="images/amird.PNG", alt="amird", style="width:100%")
+          h4 Amir Dadon
+      .column.israeli
+        .content
+          img(src="images/shlomi.png", alt="shlomis", style="width:100%")
+          h4 Shlomi Shaban
+      .column.israeli
+        .content
+          img(src="images/rai.png", alt="rami", style="width:100%")
+          h4 Rami Kleinshtain
+      .column.israeli
+        .content
+          img(src="images/keren.PNG", alt="keren", style="width:100%")
+          h4 Keren Peles
+      .column.Pop
+        .content
+          img(src="images/ravid.PNG", alt="ravid", style="width:100%")
+          h4 Ravid Plotnik
+      .column.israeli
+        .content
+          img(src="images/reaviv.png", alt="raviv", style="width:100%")
+          h4 Raviv Kaner
+      .column.israeli
+        .content
+          img(src="images/shabat.png", alt="slomishabat", style="width:100%")
+          h4 Shlomi Shabat
+      .column.Pop
+        .content
+          img(src="images/tamir.PNG", alt="Tamir", style="width:100%")
+          h4 Tamir Greenberg
+      .column.Pop
+        .content
+          img(src="images/tuns.PNG", alt="tuna", style="width:100%")
+          h4 Tuna
+      .column.Pop
+        .content
+          img(src="images/bar.png", alt="bar", style="width:100%")
+          h4 Bar Tzabari
+      .column.Show
+        .content
+          img(src="images/eguzim.png", alt="hanuca", style="width:100%")
+          h4 Hanuca Show
+      .column.Show
+        .content
+          img(src="images/hanuca.png", alt="vento", style="width:100%")
+          h4 Vento
+      .column.Show
+        .content
+          img(src="images/kanar.png", alt="kanar", style="width:100%")
+          h4 Kanar
+      .column.Show
+        .content
+          img(src="images/hadar.png", alt="hadar", style="width:100%")
+          h4 Hadar Marks
+      .column.standUp
+        .content
+          img(src="images/ori.png", alt="ori", style="width:100%")
+          h4 Ori Hizkia
+      .column.standUp
+        .content
+          img(src="images/koriat.png", alt="koriat", style="width:100%")
+          h4 Shlomi Koriat
+      .column.standUp
+        .content
+          img(src="images/adi.png", alt="adi", style="width:100%")
+          h4 Adi Achkenazi
+      .column.standUp
+        .content
+          img(src="images/revital.png", alt="revital", style="width:100%")
+          h4 Revital
+    button.Buttons(onclick="toTop()") Back To Top

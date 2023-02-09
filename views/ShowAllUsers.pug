@@ -1,0 +1,25 @@
+extends layout 
+block content 
+    h2 #{v1} 
+    table.Table
+        tr 
+            th email  
+            th FirstName 
+            th LastName  
+            th Birthdate  
+            th Phone   
+            th password         
+            th repassword  
+            th gender  
+
+        each n in users 
+            tr 
+            td=n.email
+            td=n.FirstName  
+            td=n.LastName 
+            td=n.Birthdate
+            td=n.Phone 
+            td=n.password
+            td=n.repassword 
+            td=n.gender 
+            

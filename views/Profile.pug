@@ -1,0 +1,14 @@
+extend Layout
+block content
+    form(action="/UpdateUser", method="POST")
+      h2 Update Details
+      div
+        input#Email(class="input_field", type="email", name="Email", placeholder="Enter Email", required)
+      div
+        input#OldPassword(class="input_field", type="Password", name="OldPassword", placeholder="Enter Old Password", required)
+      div
+        input#NewPassword(class="input_field", type="Password", name="NewPassword", placeholder="Enter New Password", required)
+      div
+      input#signup.Buttons(type="submit", value="Update")
+
+        

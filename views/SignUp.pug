@@ -1,0 +1,31 @@
+extend Layout
+block content
+    form(name="signUp", type="submit", action="/createNewUser", method="post", onsubmit="return validateSignUp()")
+      h2 Sign Up Form
+      div
+        input#FirstName(class="input_field", type="text", name="FirstName", placeholder="Enter First Name", required)
+      div
+        input#lastName(class="input_field", type="text", name="lastName", placeholder="Enter Last Name", required)
+      div
+        input#Email(class="input_field", type="email", name="Email", placeholder="Enter Email", required)
+      div
+        input#Birthdate(class="input_field", type="date", name="Birthdate", placeholder="Enter Birthdate", required)
+      div
+        input#Phone(class="input_field", type="tel", name="Phone", placeholder="Enter Phone XXX-XXXXXXX", pattern="[0-9]{3}-[0-9]{7}", required)
+      div
+        input#Password(class="input_field", type="password", name="Password", placeholder="Enter Password", required, onkeyup="check();")
+      div
+        input#Repassword(class="input_field", type="password", name="Repassword", placeholder="Re-type Password", required, onkeyup="check();")
+      span#message
+      div
+        lable.labels(for="gender")
+          | Gender
+        select#Gender(name="Gender", class="input_field", required)
+          option(value="Male") Male
+          option(value="Female") Female
+          option(value="Other") Other
+      p
+        | Already have an account ?
+        a(href="SignIn") Sign in 
+      .msg
+      input#signup.Buttons(type="submit", value="Register")
