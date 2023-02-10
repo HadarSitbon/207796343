@@ -1,0 +1,20 @@
+{
+  "name": "207796343",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "csvtojson": "^2.0.10",
+    "debug": "~2.6.9",
+    "express": "^4.18.2",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^3.0.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}

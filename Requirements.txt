@@ -1,0 +1,51 @@
+Ticket Space - Requirements 
+The Modules: 
+1. Express
+2. mysql2
+3. pug
+4. body-parser
+5. csvtojson
+6. csv
+7. cookie-parser
+
+Routes:
+
+//Create Tables
+app.get('/CreateTicketForShow', CreateDB.CreateTicketForShow);
+app.get('/CreateUser', CreateDB.CreateUser);
+app.get('/CreateContactUs', CreateDB.CreateContactUs);
+
+//Show Tables
+app.get('/ShowAllUsers', CreateDB.ShowAllUsers);
+app.get('/ShowAllTickets', CreateDB.ShowAllTickets);
+app.get('/ShowAllMessages', CreateDB.ShowAllMessages);
+
+//Drop Tables
+app.get('/DropTicketT', CreateDB.DropTicketT);
+app.get('/DropUsersT', CreateDB.DropUsersT);
+app.get('/DropMessagesT', CreateDB.DropMessagesT);
+
+//Insert Tables
+app.get('/InsertUserData', CreateDB.InsertUserData);
+app.get('/InsertTicketData', CreateDB.InsertTicketData);
+app.get('/InsertMessageData', CreateDB.InsertMessageData);
+
+Syntax of Creates Tables: 
+1. Create Users: 
+    var Q0 = `CREATE TABLE IF NOT EXISTS Users (
+        email varchar(255) NOT NULL PRIMARY KEY, 
+        FirstName varchar(255) not null, 
+        LastName varchar(255) not null,
+        Birthdate date not null,
+        Phone varchar(255) not null, 
+        password varchar(255) not null,
+        repassword varchar(255) not null,
+        gender varchar(255) not null
+        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;`
+
+2. Create Tickets:
+         var Q2 = "CREATE TABLE tickets (ShowName varchar(255) not null, category varchar(255) not null ,location varchar	(255) not null, date date not null ,price int not null, count int not null, primary key (ShowName , date))";
+
+3. Create Messages: 
+    var Q2 = "CREATE TABLE Messages (FullName varchar(255) not null, Email varchar(255) not null, Phone varchar(255) not 	null, subject varchar(600) not null )";
+
