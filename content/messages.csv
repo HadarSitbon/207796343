@@ -1,8 +1,8 @@
-firstname,lastname,country,subject
-hadar,sitbon,israel,hey this is a test
-hila,sitbon,israel,hey call me back please
-ron,maman,israel,hey let me know if I register
-shira,maman,israel,hey I want to buy a ticket
-ori,maman,israel,hey you website is awsome
-ziv,sherf,israel,hey I want to buy a ticket
-ori,sherf,israel,hey call me back please
+FullName,Email,Phone,subject
+hadar sitbon,hadar@gmail.com,054-1111111,hey this is a test
+hila sitbon,hila@gmail.com,054-1111112,hey call me back please
+sara sitbon,sara@gmail.com,054-1111113,hey let me know if I register
+yossi sitbon,yossi@gmail.com,054-1111114,hey I want to buy a ticket
+ori maman,roni@gmail.com,054-1111115,hey you website is awsome
+mor maman,mor@gmail.com,054-1111116,hey I want to buy a ticket
+maya lifshitz,maya@gmail.com,054-1111117,hey call me back please

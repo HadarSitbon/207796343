@@ -3,21 +3,20 @@ block content
     form(name="ContactUs", type="submit", action="/createNewMessage", method="post")
       h2 Contact Us
       div
-        label.labels First Name
-        input#fname(type="text", class="input_field", name="firstname", placeholder="Your name..")
+        label.labels Full Name
+        input#FullName(type="text", class="input_field", name="FullName", placeholder="Your name" ,required)
       div
-        label.labels Last Name
-        input#lname(type="text", class="input_field", name="lastname", placeholder="Your last name..")
+        label.labels Email
+        input#Email(type="email", class="input_field", name="Email", placeholder="Your Email" ,required)
       div
-        label.labels Country
-        select#country(name="country", class="input_field")
-          option(value="australia") Israel
-          option(value="australia") Australia
-          option(value="canada") Canada
-          option(value="usa") USA
+      div
+        label.labels Phone
+        input#Phone(type="tel", class="input_field", name="Phone", placeholder="Phone" ,required)
       div
         label.labels Subject
-        textarea#subject(class="input_field", name="subject", placeholder="Write something..", style="height:200px")
+        textarea#subject(class="input_field", name="subject", placeholder="Hey ! Please write in this message the ticket you want to purchase from the list and we will make sure that the seller gets back to you for the purchase", style="height:200px" ,required)
       div
         input.Buttons(type="submit", value="Submit")
+              
+
     

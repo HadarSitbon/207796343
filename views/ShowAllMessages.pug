@@ -3,14 +3,14 @@ block content
     h2 #{v1} 
     table.Table
         tr 
-            th firstname  
-            th lastname 
-            th country  
-            th subject           
+            th FullName  
+            th Email 
+            th Phone  
+            th subject  
 
         each n in Messages 
             tr 
-            td=n.firstname
-            td=n.lastname  
-            td=n.country 
-            td=n.subject 
+            td=n.FullName
+            td=n.Email  
+            td=n.Phone 
+            td=n.subject
