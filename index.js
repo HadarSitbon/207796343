@@ -104,3 +104,9 @@ app.get('/DropMessagesT', CreateDB.DropMessagesT);
 app.get('/InsertUserData', CreateDB.InsertUserData);
 app.get('/InsertTicketData', CreateDB.InsertTicketData);
 app.get('/InsertMessageData', CreateDB.InsertMessageData);
+
+
+//Drop and Create all the table together  
+app.get('/dropAllT', CreateDB.dropAllT);
+app.get('/CreateAllT', CreateDB.CreateAllT);
+

@@ -24,9 +24,9 @@ const CreateUser = (req, res) => {
 			return;
 		}
 		console.log('created table');
-		res.render('Results', {
-			v1: "The table Users has been created",
-		})
+		// res.render('Results', {
+		// 	v1: "The table Users has been created",
+		// })
 
 		return;
 	})
@@ -63,9 +63,9 @@ const DropUsersT = (req, res) => {
 			return;
 		}
 		console.log("table drppped");
-		res.render('Results', {
-			v1: "The table Users has been delete",
-		})
+		// res.render('Results', {
+		// 	v1: "The table Users has been delete",
+		// })
 		return;
 	})
 }
@@ -119,9 +119,9 @@ const CreateTicketForShow = (req, res) => {
 			return;
 		}
 		console.log('created tickets table');
-		res.render('Results', {
-			v1: "The table Tickets has been created",
-		})
+		// res.render('Results', {
+		// 	v1: "The table Tickets has been created",
+		// })
 		return;
 	})
 }
@@ -158,9 +158,9 @@ const DropTicketT = (req, res) => {
 			return;
 		}
 		console.log("table dropped");
-		res.render('Results', {
-			v1: "The table Tickets has been delete",
-		})
+		// res.render('Results', {
+		// 	v1: "The table Tickets has been delete",
+		// })
 		return;
 	})
 }
@@ -210,9 +210,9 @@ const CreateContactUs = (req, res) => {
 			return;
 		}
 		console.log('created Messages table');
-		res.render('Results', {
-			v1: "The table Messages has been created",
-		})
+		// res.render('Results', {
+		// 	v1: "The table Messages has been created",
+		// })
 		return;
 	})
 }
@@ -249,9 +249,9 @@ const DropMessagesT = (req, res) => {
 			return;
 		}
 		console.log("table dropped");
-		res.render('Results', {
-			v1: "The table Messages has been delete",
-		})
+		// res.render('Results', {
+		// 	v1: "The table Messages has been delete",
+		// })
 		return;
 	})
 }
@@ -287,6 +287,27 @@ const InsertMessageData = (req, res) => {
 };
 
 
+const dropAllT = (req,res) => 
+{
+     DropUsersT(req,res); 
+     DropTicketT(req,res); 
+     DropMessagesT(req,res); 
+
+     res.render('Results', { 
+        v1: "All Tables dropped"
+     });
+};
+
+const CreateAllT = (req,res) => 
+{
+     CreateUser(req,res); 
+     CreateContactUs(req,res); 
+     CreateTicketForShow(req,res); 
+
+     res.render('Results', { 
+        v1: "All Tables Created"
+     });
+};
 
 module.exports = {
 	CreateTicketForShow,
@@ -301,4 +322,6 @@ module.exports = {
 	InsertUserData,
 	InsertTicketData,
 	InsertMessageData,
+    dropAllT,
+    CreateAllT
 };
