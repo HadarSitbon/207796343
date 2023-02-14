@@ -3,9 +3,6 @@ block content
     form(name="SearchTicket", type="submit", action="/FindTicket", method="get", onsubmit="return SearchValidation()")
       h2 Search A Ticket
       div
-        label.labels(for="ShowName") Show Name
-        input#showName(class="input_field", type="text", name="showName", placeholder="Enter Show Name")
-      div
         label.labels(for="Category") Category
         select(name="Category", class="input_field", required)
           option(value="Sports") Sports
