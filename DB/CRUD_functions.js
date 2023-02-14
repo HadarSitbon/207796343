@@ -21,8 +21,10 @@ const createNewUser = function(req, res) {
 
 	};
 
+    res.cookie('Email', newUser.Email, { httpOnly: true, secure: true, maxAge: 1000 * 60 * 60 * 24 * 7 });
+
 	//insert data into cookie
-	res.cookie('Signed_Email', req.body.Email);
+	// res.cookie('Email', req.body.Email);
 
 	sql.query("INSERT INTO Users SET ?", newUser, (err, mysqlres) => {
 		if (err) {
@@ -37,7 +39,7 @@ const createNewUser = function(req, res) {
 		});
 
 
-		let CookieEmail = req.cookies.Signed_Email;
+		let CookieEmail = req.cookies.Email;
 
 		console.log(CookieEmail);
 		res.render('Results', {
@@ -239,6 +241,15 @@ const UpdateUser = (req, res) => {
 		return;
 	}
 
+    //check if new password and old password is the same 
+    if (updateData.OldPassword == updateData.NewPassword){
+        res.render('Results', {
+			v1: "New Password must be different from Old password",
+		});
+		return;
+	}
+
+
 	// Check if current password matches the password in the database
 	const Q6 = 'SELECT password FROM Users WHERE email = ?';
 	sql.query(Q6, [updateData.Email], (err, mysqlres) => {
@@ -327,6 +338,8 @@ const DeleteUser = (req, res) => {
 		});
 	});
 }
+
+
 
 
 module.exports = {
